@@ -108,8 +108,8 @@
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.placeholder.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-ui.1.10.4.min.js"></script>
     
-     <!-- Twitter Bootstrap -->
-     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="<?php echo base_url() ?>assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <!-- load revolution slider scripts -->
     <script type="text/javascript" src="<?php echo base_url() ?>assets/components/revolution_slider/js/jquery.themepunch.plugins.min.js"></script>

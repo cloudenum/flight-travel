@@ -15,9 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Theme Styles -->
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/vendor/font-awesome/css/font-awesome.min.css">
+    
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/animate.min.css">
     
     <!-- Current Page Styles -->

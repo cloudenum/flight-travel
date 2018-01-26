@@ -547,7 +547,7 @@
                     <p class="description">By signing up, I agree to Travelo's Terms of Service, Privacy Policy, Guest Refund olicy, and Host Guarantee Terms.</p>
                 </div> -->
                 <div class="email-signup">
-                    <form action="<?php echo base_url()?>home/register" method="post">
+                    <form action="<?php echo base_url()?>crud/register" method="post">
                         <div class="form-group">
                             <input name="fullname" type="text" class="input-text full-width" placeholder="Full Name">
                             <input name="username" type="text" class="input-text full-width" placeholder="Username">
