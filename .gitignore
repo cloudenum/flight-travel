@@ -20,7 +20,7 @@ travelo/*
 #-------------------------
 /nbproject/
 .idea/*
-
+.vscode/*
 ## Sublime Text cache files
 *.tmlanguage.cache
 *.tmPreferences.cache
