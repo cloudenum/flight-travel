@@ -60,5 +60,10 @@ class Crud extends CI_Controller {
     {   
         $this->Core_Model->delete('user', array( 'id' => $id));
         redirect(base_url('admin/user'), 'refresh');
-    }
+	}
+	
+	public function search()
+	{
+		redirect(base_url().'search');
+	}
 }

@@ -96,7 +96,7 @@ tjq.fn.removeClassPrefix = function(prefix) {
 setInterval(function(){c+=l;k++;e(c);"function"==typeof b.onUpdate&&b.onUpdate.call(h,c);k>=j&&(f.removeData("countTo"),clearInterval(d.interval),c=b.to,"function"==typeof b.onComplete&&b.onComplete.call(h,c))},b.refreshInterval);e(c)})};a.fn.countTo.defaults={from:0,to:0,speed:1E3,refreshInterval:100,decimals:0,formatter:function(a,e){return a.toFixed(e.decimals)},onUpdate:null,onComplete:null}})(jQuery);
 
 if (typeof enableChaser == "undefined") {
-    enableChaser = 1 // Enable Chaser menu (open on scroll) ?   1 - Yes / 0 - No
+    enableChaser = 0 // Enable Chaser menu (open on scroll) ?   1 - Yes / 0 - No
 }
 
 /* on stage plugin */
@@ -212,7 +212,9 @@ function changeTraveloElementUI() {
         showOn: 'button',
         buttonImage: 'images/icon/blank.png',
         buttonText: '',
-        buttonImageOnly: true,
+		buttonImageOnly: true,
+		format: 'dd/mm/yyyy',
+		todayHighlight: true,
         /*showOtherMonths: true,*/
         minDate: 0,
         dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],

@@ -2,3 +2,33 @@
  * Title:   Custom Style File
  * Author:  http://themeforest.net/user/soaptheme 
  */
+#header {
+	position: fixed;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+
+}
+
+#header.scrolled{
+
+	/* -webkit-transform: translate3d(10vh, 0px, 0px);
+	-moz-transform: translate3d(10vh, 0px, 0px);
+	-o-transform: translate3d(10vh, 0px, 0px);
+	transform: translate3d(10vh, 0px, 0px); */
+	animation: scale 1s ease-in-out;
+}
+
+.search-box {
+	margin-top: 0;
+}
+
+@keyframes scale {
+	100% {
+		-webkit-transform: translate3d(0px, 10px, 0px) scale3d(0.8, 0.8, 0);
+		-moz-transform: translate3d(0px, 10px, 0px) scale3d(0.8, 0.8, 0);
+		-o-transform: translate3d(0px, 10px, 0px) scale3d(0.8, 0.8, 0);
+		transform: translate3d(0px, 10px, 0px) scale3d(0.8, 0.8, 0);
+	}
+  }

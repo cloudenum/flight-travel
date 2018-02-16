@@ -41,6 +41,14 @@
     
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
+
+	<style>
+        .main-bar { height: 600px; background: url('<?php echo base_url() ?>assets/images/slide/river.jpg') ; padding-top: 250px; }
+        section#content { padding: 0; background: #fff; }
+        .search-box-wrapper { background: none; }
+        .caption { padding: 0 20px; line-height: 2em; color: #fff; display: inline-block; }
+        .caption em { font-weight: bold; }
+    </style>
     
     <!-- CSS for IE -->
     <!--[if lte IE 9]>

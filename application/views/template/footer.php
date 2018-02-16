@@ -101,7 +101,7 @@
     
 
     <!-- Javascript -->
-    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-2.0.2.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery.noconflict.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/modernizr.2.7.1.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/jquery-migrate-1.2.1.min.js"></script>
@@ -134,25 +134,13 @@
     <!-- load page Javascript -->
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/theme-scripts.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/scripts.js"></script>
-    
-    <script type="text/javascript">
-        tjq(document).ready(function() {
-            tjq('.revolution-slider').revolution(
-            {
-                dottedOverlay:"none",
-                delay:9000,
-                startwidth:1200,
-                startheight:646,
-                onHoverStop:"on",
-                hideThumbs:10,
-                fullWidth:"on",
-                forceFullWidth:"on",
-                navigationType:"none",
-                shadow:0,
-                spinner:"spinner4",
-                hideTimerBar:"on",
-            });
-        });
-    </script>
+	
+
+<?php 
+  if (is_array($js_to_load)) {
+	foreach ($js_to_load as $js_file) {?>
+<script type="text/javascript" src="<?php echo base_url() ?>assets/<?php echo $js_file;?>"></script>
+<?php  }
+  } ?>
 </body>
 </html>
